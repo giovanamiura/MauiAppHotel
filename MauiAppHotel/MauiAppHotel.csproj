@@ -57,9 +57,65 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <AndroidResource Remove="NovaPasta1\**" />
+	  <AndroidResource Remove="NovaPasta2\NovaPasta1\**" />
+	  <AndroidResource Remove="NovaPasta2\NovaPasta\**" />
+	  <AndroidResource Remove="NovaPasta\**" />
+	  <Compile Remove="NovaPasta1\**" />
+	  <Compile Remove="NovaPasta2\NovaPasta1\**" />
+	  <Compile Remove="NovaPasta2\NovaPasta\**" />
+	  <Compile Remove="NovaPasta\**" />
+	  <EmbeddedResource Remove="NovaPasta1\**" />
+	  <EmbeddedResource Remove="NovaPasta2\NovaPasta1\**" />
+	  <EmbeddedResource Remove="NovaPasta2\NovaPasta\**" />
+	  <EmbeddedResource Remove="NovaPasta\**" />
+	  <MauiCss Remove="NovaPasta1\**" />
+	  <MauiCss Remove="NovaPasta2\NovaPasta1\**" />
+	  <MauiCss Remove="NovaPasta2\NovaPasta\**" />
+	  <MauiCss Remove="NovaPasta\**" />
+	  <MauiXaml Remove="NovaPasta1\**" />
+	  <MauiXaml Remove="NovaPasta2\NovaPasta1\**" />
+	  <MauiXaml Remove="NovaPasta2\NovaPasta\**" />
+	  <MauiXaml Remove="NovaPasta\**" />
+	  <None Remove="NovaPasta1\**" />
+	  <None Remove="NovaPasta2\NovaPasta1\**" />
+	  <None Remove="NovaPasta2\NovaPasta\**" />
+	  <None Remove="NovaPasta\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Remove="Models.cs" />
+	  <Compile Remove="NovaPasta2\Quarto.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\Fonts\PassionOne-Black.ttf" />
+	  <None Remove="Resources\Fonts\PassionOne-Bold.ttf" />
+	  <None Remove="Resources\Fonts\PassionOne-Regular.ttf" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Views\sobre.xaml.cs">
+	    <DependentUpon>sobre.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\ContratacaoHospedagem.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\HospedagemContratada.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\sobre.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
