@@ -32,5 +32,11 @@ FontSize="25"
 FontSize="15"
       TextColor="Black" />
 
+
+
+    <Button Text="Voltar"
+                Padding="10"
+            HorizontalOptions="Center"
+            Clicked="Button_Clicked"/>
     </VerticalStackLayout>
 </ContentPage>

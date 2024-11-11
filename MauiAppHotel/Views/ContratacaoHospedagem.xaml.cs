@@ -14,24 +14,24 @@ public partial class ContratacaoHospedagem : ContentPage
 		dtpck_checkin.MinimumDate = DateTime.Now; // define o dia mínimo que pode realizar o checkin
 		dtpck_checkin.MaximumDate = new DateTime(DateTime.Now.Year, DateTime.Now.Month + 1, DateTime.Now.Day); //define tempo máximo
 
-		dtpck_checkout.MinimumDate = dtpck_checkin.Date.AddDays(1); //pessoa pode ficar no mínimo 1 dia
-		dtpck_checkout.MaximumDate = dtpck_checkin.Date.AddMonths(6); //pessoa pode ficar no máximo 6 meses
+        dtpck_checkout.MinimumDate = dtpck_checkin.Date.AddDays(1); //pessoa pode ficar no mínimo 1 dia
+        dtpck_checkout.MaximumDate = dtpck_checkin.Date.AddMonths(6); //pessoa pode ficar no máximo 6 meses
 		{
-			try
-			{
-                Navigation.PushAsync(new HospedagemContratada());   //muda de página
-            }
-			catch (Exception ex)
-			{
-				DisplayAlert("Ops", ex.Message, "Ok");
-			}
+			
 		}
 	}
 
 	private void Button_Clicked(object sender, EventArgs e)
 	{
-
-	}
+        try
+        {
+            Navigation.PushAsync(new HospedagemContratada());   //muda de página
+        }
+        catch (Exception ex)
+        {
+            DisplayAlert("Ops", ex.Message, "Ok");
+        }
+    }
 
     private void dtpck_checkin_DateSelected(object sender, DateChangedEventArgs e)
     {

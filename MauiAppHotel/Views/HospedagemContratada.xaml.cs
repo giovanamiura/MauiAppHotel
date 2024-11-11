@@ -5,13 +5,15 @@ public partial class HospedagemContratada : ContentPage
 	public HospedagemContratada()
 	{
 		InitializeComponent();
+
 	}
 
-    private void Button_Clicked(object sender, EventArgs e)
+    public void Button_Clicked(object sender, EventArgs e)
     {
+        
         try
         {
-            Navigation.PopAsync();
+            Navigation.PushAsync(new sobre());             //muda de página
         }
         catch (Exception ex)
         {

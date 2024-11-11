@@ -49,9 +49,15 @@
                 <Label Text="R$1000,00"/>
             </HorizontalStackLayout>
         </Frame>
-        
+
         <Button Text="Voltar"
+                Padding="10"
                 HorizontalOptions="Center"
                 Clicked="Button_Clicked"/>
+
+        <Button Text="Avançar"
+                Padding="10"
+            HorizontalOptions="Center"
+            Clicked="Button_Clicked"/>
     </VerticalStackLayout>
 </ContentPage>
