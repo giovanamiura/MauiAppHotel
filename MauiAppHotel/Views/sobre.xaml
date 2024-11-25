@@ -8,23 +8,34 @@
 
     <VerticalStackLayout VerticalOptions="CenterAndExpand">
         <Label 
-            Text="Sobre"
+            Text="Sobre:"
+               Padding="20"
             VerticalOptions="Center" 
             HorizontalOptions="Center"
             FontFamily="PassionOne-Regular"
-  FontSize="50"
+  FontSize="Header"
         TextColor="Darkblue"  />
 
         <Label
-            Text="Giovana Emi Nomura Miura"
+            Text="Hotel Plaza"
+               Padding="10"
             VerticalOptions="Center"
             HorizontalOptions="Center"
                       FontFamily="PassionOne-Regular"
-FontSize="25"
+FontSize="35"
       TextColor="Black" />
 
         <Label
-            Text="Ano de desenvolvimento: 2024"
+            Text="        O Hotel Plaza foi fundado em 1955 por Mário de Souza Carvalho (1920 - 1990). Após seu falecimento, seu neto Fernando de Souza (1964- ) assumiu a gerência do hotel, considerado atualmente um dos melhores da região para vir com a família."
+            Padding="10"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+                      FontFamily="PassionOne-bold"
+FontSize="13"
+      TextColor="Black" />
+
+        <Label
+            Text="Endereço: Avenida João Pinheiro, 382 - SP"
             Padding="10"
             VerticalOptions="Center"
             HorizontalOptions="Center"
@@ -33,10 +44,10 @@ FontSize="15"
       TextColor="Black" />
 
 
-
-    <Button Text="Voltar"
+        <Button Text="Voltar"
                 Padding="10"
             HorizontalOptions="Center"
             Clicked="Button_Clicked"/>
     </VerticalStackLayout>
+    
 </ContentPage>
