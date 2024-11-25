@@ -6,7 +6,7 @@
               NavigationPage.HasNavigationBar="False"        
  BackgroundColor="{StaticResource Gray200}">
 
-    <VerticalStackLayout VerticalOptions="Center">
+    <VerticalStackLayout VerticalOptions="CenterAndExpand">
         <Label 
             Text="Sobre"
             VerticalOptions="Center" 

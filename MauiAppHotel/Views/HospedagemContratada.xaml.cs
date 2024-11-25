@@ -19,5 +19,6 @@ public partial class HospedagemContratada : ContentPage
         {
             DisplayAlert("Ops", ex.Message, "Ok");
         }
+
     }
 }
